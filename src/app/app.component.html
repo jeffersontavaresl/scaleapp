@@ -1,30 +1,3 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" style="color:white;">Users</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarColor02">
-  </div>
-</nav>
-<div class="container" id="main-container">
-<div class="row">
-  <div *ngFor="let user of users | paginate: { itemsPerPage: 3, currentPage: paginaAtual};" class="col-md-6 col-xl-3">
-     <div class="card m-b-30">
-        <div class="card-body row">
-           <div class="col-6">
-              <a href=""><img src="{{user?.avatar}}" alt="" class="img-fluid rounded-circle w-60"></a>
-           </div>
-           <div class="col-6 card-title align-self-center mb-0">
-              <h5>{{user?.first_name}}</h5>
-              <p class="m-0">{{user?.last_name}}</p>
-           </div>
-        </div>
-        <ul class="list-group list-group-flush">
-           <li class="list-group-item"><i class="fa fa-envelope float-right"></i>{{user?.email}}</li>
-        </ul>
-     </div>
-  </div>
-</div>
-<pagination-controls (pageChange)="paginaAtual = $event"></pagination-controls>
 
-
+<user-root></user-root>
+<country-root></country-root>

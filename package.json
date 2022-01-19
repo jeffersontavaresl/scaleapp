@@ -11,10 +11,12 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.1.0",
+    "@angular/cdk": "^13.1.2",
     "@angular/common": "~13.1.0",
     "@angular/compiler": "~13.1.0",
     "@angular/core": "~13.1.0",
     "@angular/forms": "~13.1.0",
+    "@angular/material": "^13.1.2",
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
@@ -23,6 +25,7 @@
     "ngx-pagination": "^5.1.1",
     "popper.js": "^1.14.3",
     "rxjs": "~7.4.0",
+    "sort-by": "^1.2.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

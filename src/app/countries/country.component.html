@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" style="color:white;">Countries</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor02">
+    </div>
+  </nav>
+ <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Code</th>
+        <th scope="col">Name</th>
+        <th scope="col">Fronteiras</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let country of countries">
+        <th scope="row">{{country?.code}}</th>
+        <td>{{country?.name}}</td>
+        <td>{{country?.fronteiras}}</td>
+      </tr>
+    </tbody>
+  </table>
